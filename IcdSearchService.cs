@@ -12,8 +12,8 @@ namespace ICD_integration
     public class IcdSearchService
     {
         private static readonly string tokenEndpoint = "https://icdaccessmanagement.who.int/connect/token";
-        private static readonly string clientId = "7fe90114-486d-463e-af6f-30c8c1d80638_2e7745a3-e642-4503-ae33-dd6b14de1acb";
-        private static readonly string clientSecret = "0B4L/YR2hazgz7CTUnTc/dbqCxFBaPWlRrdOcSvpRFw=";
+        private static readonly string clientId = "CLIENT_ID";
+        private static readonly string clientSecret = "CLIENT_SECRET";
         private static readonly string scope = "icdapi_access";
         private static readonly string apiUrl = "https://id.who.int/icd/entity/search";
 
@@ -97,6 +97,5 @@ namespace ICD_integration
     {
         public string TheCode { get; set; }
         public string Title { get; set; }
-        //public string Definition { get; set; }
     }
 }
